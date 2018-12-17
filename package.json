@@ -4,6 +4,7 @@
   "description": "Jest helpers for working with the React Profiler API.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint *.js",
     "prettier": "prettier --write *.js",
     "test": "jest"
   },
@@ -11,7 +12,9 @@
     "type": "git",
     "url": "github.com/bvaughn/jest-react-profiler"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "jest",
     "test",
@@ -33,7 +36,10 @@
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "prettier": "1.15.3",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3",
     "react-dom": "^16.5"
   }
 }
