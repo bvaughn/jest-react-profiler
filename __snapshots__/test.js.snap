@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-react-profiler withProfiler doesn't fail if Profiler doesn't commit as part of an update 1`] = `1`;
+
+exports[`jest-react-profiler withProfiler doesn't fail if Profiler doesn't commit as part of an update 2`] = `0`;
+
+exports[`jest-react-profiler withProfiler supports cascading renders 1`] = `2`;
+
+exports[`jest-react-profiler withProfiler supports initial mount 1`] = `1`;
+
+exports[`jest-react-profiler withProfiler supports multiple calls within a single test case 1`] = `1`;
+
+exports[`jest-react-profiler withProfiler supports multiple calls within a single test case 2`] = `2`;
+
+exports[`jest-react-profiler withProfiler supports nested test profilers 1`] = `1`;
+
+exports[`jest-react-profiler withProfiler supports nested test profilers 2`] = `1`;
+
+exports[`jest-react-profiler withProfiler supports nested test profilers 3`] = `1`;
+
+exports[`jest-react-profiler withProfiler supports nested test profilers 4`] = `0`;
+
+exports[`jest-react-profiler withProfiler tracks updates in nested components 1`] = `1`;
+
+exports[`jest-react-profiler withProfiler tracks updates in nested components 2`] = `1`;
