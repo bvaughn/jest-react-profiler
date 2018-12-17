@@ -1,6 +1,6 @@
 {
   "name": "jest-react-profiler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Jest helpers for working with the React Profiler API.",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,15 @@
     "prettier": "prettier --write *.js",
     "test": "jest"
   },
+  "homepage": "https://github.com/bvaughn/jest-react-profiler",
   "repository": {
     "type": "git",
-    "url": "github.com/bvaughn/jest-react-profiler"
+    "url": "https://github.com/bvaughn/jest-react-profiler.git"
   },
-  "files": [
-    "index.js"
-  ],
+  "bugs": {
+    "url": "https://github.com/bvaughn/jest-react-profiler/issues"
+  },
+  "files": ["index.js"],
   "keywords": [
     "jest",
     "test",
@@ -27,6 +29,7 @@
     "renders"
   ],
   "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
+  "contributors": ["Brian Vaughn <brian.david.vaughn@gmail.com>"],
   "license": "MIT",
   "dependencies": {
     "jest": "^21",
