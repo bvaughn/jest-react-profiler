@@ -1,6 +1,6 @@
 {
   "name": "jest-react-profiler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jest helpers for working with the React Profiler API.",
   "main": "index.js",
   "scripts": {

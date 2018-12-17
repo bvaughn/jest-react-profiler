@@ -14,14 +14,16 @@ yarn add jest-react-profiler -D
 // Requiring this package will automatically register its custom matchers.
 const { withProfiler } = require("jest-react-profiler");
 
+function Greeting({ name }) {
+  return <div>Hello, {name}</div>;
+}
+
 // Decorate a React component with a test Profiler:
-const Example = withProfiler(
-  () => "Hello!"
-);
+const GreetingWithProfiler = withProfiler(Greeting);
 
 // Next render it like normal:
 render(
-  <Example foo="abc" bar={123} />,
+  <GreetingWithProfiler name="Brian" />,
   document.createElement("div")
 );
 

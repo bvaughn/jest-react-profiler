@@ -21,19 +21,30 @@ describe("jest-react-profiler", () => {
       const FunctionComponent = () => "Hello!";
       const Example = withProfiler(FunctionComponent);
 
-      const container = document.createElement("div");
-      render(<Example />, container);
+      render(<Example />, document.createElement("div"));
       expect(Example).toMatchNumCommits();
       expect(Example).toMatchNumCommits();
     });
 
     [true, false].forEach(useSnapshots => {
+      it("should pass through props", () => {
+        function Greeting({ name }) {
+          return <div>Hello, {name}</div>;
+        }
+
+        const GreetingWithProfiler = withProfiler(Greeting);
+
+        const container = document.createElement("div");
+        render(<GreetingWithProfiler name="Brian" />, container);
+
+        expect(container.textContent).toBe("Hello, Brian");
+      });
+
       it("supports initial mount", () => {
         const FunctionComponent = () => "Hello!";
         const Example = withProfiler(FunctionComponent);
 
-        const container = document.createElement("div");
-        render(<Example />, container);
+        render(<Example />, document.createElement("div"));
 
         if (useSnapshots) {
           expect(Example).toMatchNumCommits();
@@ -59,8 +70,7 @@ describe("jest-react-profiler", () => {
         }
         const Example = withProfiler(ClassComponent);
 
-        const container = document.createElement("div");
-        render(<Example />, container);
+        render(<Example />, document.createElement("div"));
 
         if (useSnapshots) {
           expect(Example).toMatchNumCommits();
@@ -130,12 +140,11 @@ describe("jest-react-profiler", () => {
           }
         }
 
-        const container = document.createElement("div");
         render(
           <Root>
             <NestedComponent />
           </Root>,
-          container
+          document.createElement("div")
         );
 
         expect(numRootUpdates).toBe(1);
@@ -176,12 +185,11 @@ describe("jest-react-profiler", () => {
         }
         const Nested = withProfiler(NestedComponent);
 
-        const container = document.createElement("div");
         render(
           <Root>
             <Nested />
           </Root>,
-          container
+          document.createElement("div")
         );
 
         if (useSnapshots) {
