@@ -28,10 +28,10 @@ render(
 );
 
 // Now you can specify an expected number of commits:
-expect(Example).toHaveCommittedTimes(1);
+expect(GreetingWithProfiler).toHaveCommittedTimes(1);
 
 // Or use a Jest snapshot to track the value:
-expect(Example).toMatchNumCommits();
+expect(GreetingWithProfiler).toMatchNumCommits();
 ```
 
 ## API
