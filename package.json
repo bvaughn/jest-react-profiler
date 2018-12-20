@@ -16,7 +16,9 @@
   "bugs": {
     "url": "https://github.com/bvaughn/jest-react-profiler/issues"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "jest",
     "test",
@@ -29,12 +31,11 @@
     "renders"
   ],
   "author": "Brian Vaughn <brian.david.vaughn@gmail.com>",
-  "contributors": ["Brian Vaughn <brian.david.vaughn@gmail.com>"],
+  "contributors": [
+    "Brian Vaughn <brian.david.vaughn@gmail.com>"
+  ],
   "license": "MIT",
-  "dependencies": {
-    "jest": "^21",
-    "react": "^16.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
@@ -42,7 +43,13 @@
     "eslint": "^5.10.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^21",
     "prettier": "^1.15.3",
+    "react": "^16.5",
     "react-dom": "^16.5"
+  },
+  "peerDependencies": {
+    "jest": ">21",
+    "react": ">16.5"
   }
 }
